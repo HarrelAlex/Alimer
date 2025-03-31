@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Caudex:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+body {
+  font-family: "Caudex", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  padding: 2rem;
+  padding-top: 0;
+  box-sizing: border-box;
+}
+
+.stitle {
+  font-size: 3rem;
+}
+
+.head {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #a09a8dff;
+  margin-bottom: 3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  animation: fadeInDown 0.8s ease-out;
+}
+
+.shead {
+  margin-bottom: 0rem;
+}
+
+.button-container {
+  display: flex;
+  gap: 7rem;
+  margin-left: 0;
+}
+
+.button2 {
+  padding: 0.5rem 2.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #a09a8dff;
+  border: solid 1px #393731;
+  background-color: #202020;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.subhead {
+  font-size: 1.2rem;
+  font-weight: bolder(normal);
+}

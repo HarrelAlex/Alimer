@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Caudex:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+body {
+  font-family: "Caudex", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.title {
+  font-size: 5rem;
+  color: #bd5743;
+}
+
+.head {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #a09a8dff;
+  margin-bottom: 3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  animation: fadeInDown 0.8s ease-out;
+}
+
+.button-container {
+  display: flex;
+  gap: 7rem;
+  margin-left: 0;
+}
+
+.button {
+  padding: 1.5rem 3.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #a09a8dff;
+  border: solid 1px #393731;
+  background-color: #202020;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+  color: #191a2cff;
+  border: none;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  background-color: #bd5743;
+}
+
+.button:active {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+}
+
+.selection-message {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2b2d42;
+  margin-bottom: 1rem;
+  animation: fadeIn 0.5s ease-out;
+}
+
+.back-button {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  color: #bd5743;
+  background-color: transparent;
+  border: 2px solid #bd5743;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #bd5743;
+  color: white;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 3rem;
+  }
+
+  .button-container {
+    flex-direction: column;
+  }
+
+  .button {
+    width: 100%;
+  }
+}

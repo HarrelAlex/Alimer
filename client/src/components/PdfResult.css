@@ -1,0 +1,57 @@
+/* Container Styles */
+.pdf-result-container,
+.chat-container {
+  max-width: 100%; /* Equivalent to max-w-3xl */
+  margin: 0 auto; /* Center the container */
+  padding: 24px; /* Equivalent to p-6 */
+  background-color: #202020; /* Background color */
+  border-radius: 0.5rem; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow */
+  margin-top: 1.5rem; /* Space between sections */
+}
+
+/* Heading Styles */
+h3 {
+  font-size: 1.5rem; /* Equivalent to text-2xl */
+  font-weight: 600; /* Semi-bold */
+  color: #bd5743; /* Equivalent to text-gray-800 */
+  margin-bottom: 16px; /* Space below heading */
+}
+
+h4 {
+  font-size: 1.25rem; /* Equivalent to text-xl */
+  font-weight: 600; /* Semi-bold */
+  color: #a09a8dff; /* Equivalent to text-gray-700 */
+  margin-bottom: 8px; /* Space below subheading */
+}
+
+.text-length-section p {
+  text-align: center;
+}
+/* Text Styles */
+p {
+  color: #fff; /* Equivalent to text-gray-600 */
+  margin-bottom: 16px; /* Space below paragraph */
+  text-align: justify;
+}
+
+/* Input and Button Styles */
+.chat-container .input-container {
+  display: flex; /* Flexbox layout */
+  align-items: center; /* Center items vertically */
+  margin-bottom: 16px; /* Space below input */
+}
+
+input[type="text"] {
+  flex-grow: 1; /* Allow input to take available space */
+  padding: 8px; /* Padding inside input */
+  margin: 10px 20px;
+  border: 1px solid #cbd5e0; /* Border color */
+  border-radius: 0.5rem; /* Rounded corners */
+  outline: none; /* Remove default outline */
+}
+
+input[type="text"]:focus {
+  border-color: #bd5743; /* Border color on focus */
+  box-shadow: 0 0 0 2px rgba(49, 130, 206, 0.5); /* Focus ring */
+}

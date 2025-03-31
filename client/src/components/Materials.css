@@ -1,0 +1,213 @@
+.learning-materials-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.learning-materials-card {
+  background: #202020;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 200%;
+  max-width: 900px;
+  overflow: hidden;
+}
+
+.card-header {
+  padding: 1.5rem;
+  border-bottom: 1px solid #2f2f2f;
+  background: #202020;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+}
+
+.card-description {
+  color: #666;
+  margin: 0;
+}
+
+.tabs-container {
+  display: flex;
+  overflow-x: auto;
+  width: 100%;
+  border: 1px solid #2f2f2f;
+  background: #202020;
+  padding: 0.5rem 1rem;
+}
+
+.tab-button {
+  padding: 0.75rem 1rem;
+  border: none;
+  background: #242424;
+  border: solid 1px #393731;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #666;
+  white-space: nowrap;
+  border-bottom: 3px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.tab-button:hover {
+  color: #333;
+}
+
+.tab-button.active {
+  color: #bd5743;
+  border-color: #bd5743;
+  font-weight: 500;
+}
+
+.card-content {
+  padding: 1.5rem;
+}
+
+.loading-message {
+  text-align: center;
+  padding: 2rem;
+  color: #666;
+}
+
+.error-message {
+  color: #e53e3e;
+  text-align: center;
+  padding: 1rem;
+  background-color: #242424;
+  border-radius: 4px;
+}
+
+.no-results-message {
+  text-align: center;
+  padding: 2rem;
+  color: #666;
+  background-color: #242424;
+  border-radius: 4px;
+}
+
+.materials-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.material-item {
+  border: 1px solid #bd5743;
+  border-radius: 6px;
+  padding: 1.25rem;
+  transition: all 0.2s ease;
+}
+
+.material-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.material-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.material-type-icon {
+  font-size: 1.5rem;
+  margin-right: 0.75rem;
+}
+
+.material-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.material-title a {
+  color: #bd5743;
+  text-decoration: none;
+}
+
+.material-title a:hover {
+  text-decoration: underline;
+}
+
+.material-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.8rem;
+  color: #666;
+  margin-bottom: 0.75rem;
+}
+
+.material-complexity {
+  padding: 0.2rem 0.5rem;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+}
+
+.material-description {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+.material-actions {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.view-material-button,
+.save-material-button {
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.view-material-button {
+  background-color: #bd5743;
+  color: white;
+  border: none;
+  text-decoration: none;
+}
+
+.view-material-button:hover {
+  background-color: #bd5743;
+}
+
+.save-material-button {
+  background-color: white;
+  color: #bd5743;
+  border: 1px solid #bd5743;
+}
+
+.save-material-button:hover {
+  background-color: #f0f7ff;
+}
+
+@media (max-width: 768px) {
+  .learning-materials-container {
+    padding: 1rem;
+  }
+
+  .card-header,
+  .card-content {
+    padding: 1rem;
+  }
+
+  .material-actions {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .view-material-button,
+  .save-material-button {
+    width: 100%;
+    text-align: center;
+  }
+}
