@@ -1,0 +1,11 @@
+--white: #FFFFFFff;
+--raisin-black: #191A2Cff;
+--raisin-black-2: #18192Bff;
+--raisin-black-3: #242634ff;
+--spring-bud: #A7E628ff;
+
+--jet: #2C2B28ff;
+--burnt-sienna: #D97757ff;
+--jet-2: #393937ff;
+--battleship-gray: #A09A8Dff;
+--platinum: #E5E5E2ff;
